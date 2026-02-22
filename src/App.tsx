@@ -8,7 +8,7 @@ import { Avatar, AvatarFallback, AvatarImage } from './components/ui/avatar';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './components/ui/tabs';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from './components/ui/dialog';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
-// import tourismVideo from "./components/material/video.mp4";
+
 
 
 const destinations = [
@@ -102,13 +102,13 @@ const culturalItems = [
   }
 ];
 
-// ✅ Move HomePage OUTSIDE of App so it doesn't remount on every keystroke
+
 interface HomePageProps {
   setCurrentPage: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const HomePage = ({ setCurrentPage }: HomePageProps) => {
-  // The search state belongs here, inside the component that uses it
+ 
   const [searchQuery, setSearchQuery] = useState('');
 
   return (
@@ -1166,5 +1166,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
